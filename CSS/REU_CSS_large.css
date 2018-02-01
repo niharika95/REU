@@ -1,161 +1,153 @@
-/*
-Errors:
-- all divs after background and overlay are more than allowed space : horizontal scrolling - BOOTSTRAP 3 ISSUE;
-- Fonts not found by browser
-- implement fullpage.js
-*/
-
-@media only screen and (min-width: 1200px) {
-	@font-face {
-	    font-family: Noto_Sans_Bold;
-	    src: url(../Fonts/Noto_Sans/NotoSans-Bold.ttf);
-	}
-	@font-face {
-	    font-family: Abel;
-	    src: url(../Fonts/Abel/Abel-Regular.ttf);
-	}
-	@font-face{
-		font-family: Montserrat_Regular;
-		src: url(../Fonts/Montserrat/Montserrat-Regular.tff);
-	}
-	@font-face{
-		font-family: Montserrat-SemiBold;
-		src: url(../Fonts/Montserrat/Montserrat-SemiBold.tff);
-	}
-	@font-face{
-		font-family: Open_Sans_Regular;
-		src: url(../Fonts/Open_Sans/OpenSans-Regular.tff);
-	}
-	@font-face{
-		font-family: Open_Sans_SemiBold;
-		src: url(../Fonts/Open_Sans/OpenSans-SemiBold.tff);
-	}
-	@font-face{
-		font-family: Oxygen_Regular;
-		src: url(../Fonts/Oxygen/Oxygen-Regular.tff);
-	}
-	.backgroundImage{
-		background-image: url('../Images/software.png');
-		/*position: fixed;*/
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-	}
-	.colorOverlayOnBackgroundImage{
-	    background: rgba(0,0,0,0.8);
-	    height: 100%;
-	    background-repeat: no-repeat;
-		background-size: cover;
-	    z-index: 1;
-	}
-	.REUtitle{
-		color: white;
-		text-align: center;
-		padding-top: 15%;
-		font-size: 100px;
-		font-family: Noto_Sans_Bold;
-	}
-	.REUtagline{
-		color: white;
-		text-align: center;
-		margin-top: 2%;
-		font-size: 40px;
-		font-family: Abel;
-	}
-	.objectivesIntellectualmeritBroaderImpactsSection{
-		background-color: #558b2f;
-	}
-	.objectivesIntellectualmeritBroaderImpactsTitle{
-		font-family: Abel;
-		font-size: 55px;
-		text-align: center;
-		color: white;
-		padding-top: 5%;
-	}
-	.objectivesIntellectualmeritBroaderImpactsContent{
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 400;
-		font-size: 20px;
-		text-align: justify;
-		display: flex;
-		color: white;
-		padding-left: 20%;
-		padding-right: 20%;
-		margin-top: 2%;
-		padding-bottom: 5%;
-	}
-	.mentorsSection{
-		background-color: #8d6e63;
-	}
-	.profSection{
-		background-color: #8d6e63;
-	}
-	.profInsideSection{
-		/*background-color: #8d6e63;
-		padding: 2%;
-		margin-bottom: 5%;*/
-	}
-	.profNameSection{
-		font-size: 40px;
-		padding-left: 5%;
-		padding-bottom: 2%;
-		color: white;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
-	}
-	.profContentSection{
-		text-align: justify;
-		font-size: 18px;
-		padding-bottom: 5%;
-		padding-left: 5%;
-		padding-right: 5%;
-		color: white;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 400;
-	}
-	.projects{
-		background-color: #FF9100;
-	}
-	.projectHead{
-		text-align: center;
-		font-size: 55px;
-		font-family: Abel;
-		background-color: #FF9100;
-		color: white;
-		padding-bottom: 1%;
-		padding-top: 2%;
-	}
-	.mentorName{
-		text-align: center;
-		font-family: 'Open Sans', sans-serif;;
-		font-weight: 600;
-		font-size: 30px;
-		background-color: rgba(0,0,0,0.6);
-		color: white;
-	}
-	.projectsSection{
-		background-color: #FF9100;
-	}
-	.projectSeparationSection{
-		padding: 2%;
-		background-color: #FF9100;
-	}
-	.projectNameSection{
-		font-weight: bold;
-		text-align: center;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 600;
-		color: rgb(0,0,0,0.6);
-		font-size: 24px;
-	}
-	.projectContentSection{
-		color: white;
-		font-size: 18px;
-		text-align: justify;
-		padding: 4%;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 400;
-	}
+@font-face {
+    font-family: Noto_Sans_Bold;
+    src: url(../Fonts/Noto_Sans/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: Abel;
+    src: url(../Fonts/Abel/Abel-Regular.ttf);
+}
+@font-face{
+	font-family: Montserrat_Regular;
+	src: url(../Fonts/Montserrat/Montserrat-Regular.tff);
+}
+@font-face{
+	font-family: Montserrat-SemiBold;
+	src: url(../Fonts/Montserrat/Montserrat-SemiBold.tff);
+}
+@font-face{
+	font-family: Open_Sans_Regular;
+	src: url(../Fonts/Open_Sans/OpenSans-Regular.tff);
+}
+@font-face{
+	font-family: Open_Sans_SemiBold;
+	src: url(../Fonts/Open_Sans/OpenSans-SemiBold.tff);
+}
+@font-face{
+	font-family: Oxygen_Regular;
+	src: url(../Fonts/Oxygen/Oxygen-Regular.tff);
+}
+.backgroundImage{
+	background-image: url('../Images/software.png');
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.colorOverlayOnBackgroundImage{
+    background: rgba(0,0,0,0.8);
+    height: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+    z-index: 1;
+}
+.REUtitle{
+	color: white;
+	text-align: center;
+	padding-top: 13%;
+	padding-bottom: 2%;
+	font-size: 70px;
+	font-family: Noto_Sans_Bold;
+}
+.REUtagline{
+	color: white;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 40px;
+	font-family: Abel;
+}
+.objectivesIntellectualmeritBroaderImpactsSection{
+	background-color: #558b2f;
+}
+.objectivesIntellectualmeritBroaderImpactsTitle{
+	font-family: Abel;
+	font-size: 55px;
+	text-align: center;
+	color: white;
+	padding-top: 5%;
+}
+.objectivesIntellectualmeritBroaderImpactsContent{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: justify;
+	display: flex;
+	color: white;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-top: 2%;
+	padding-bottom: 5%;
+}
+.mentorsSection{
+	background-color: #8d6e63;
+}
+.profSection{
+	background-color: #8d6e63;
+}
+.profInsideSection{
+	/*background-color: #8d6e63;
+	padding: 2%;
+	margin-bottom: 5%;*/
+}
+.profNameSection{
+	font-size: 40px;
+	padding-left: 5%;
+	padding-bottom: 2%;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+.profContentSection{
+	text-align: justify;
+	font-size: 18px;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.projects{
+	background-color: #FF9100;
+}
+.projectHead{
+	text-align: center;
+	font-size: 55px;
+	font-family: Abel;
+	background-color: #FF9100;
+	color: white;
+	padding-bottom: 1%;
+	padding-top: 2%;
+}
+.mentorName{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;;
+	font-weight: 600;
+	font-size: 30px;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+}
+.projectsSection{
+	background-color: #FF9100;
+}
+.projectSeparationSection{
+	padding: 2%;
+	background-color: #FF9100;
+}
+.projectNameSection{
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: rgb(0,0,0,0.6);
+	font-size: 30px;
+}
+.projectContentSection{
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+	padding: 4%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
