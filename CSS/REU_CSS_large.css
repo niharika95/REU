@@ -7,24 +7,12 @@
     src: url(../Fonts/Abel/Abel-Regular.ttf);
 }
 @font-face{
-	font-family: Montserrat_Regular;
-	src: url(../Fonts/Montserrat/Montserrat-Regular.tff);
-}
-@font-face{
-	font-family: Montserrat-SemiBold;
-	src: url(../Fonts/Montserrat/Montserrat-SemiBold.tff);
-}
-@font-face{
 	font-family: Open_Sans_Regular;
 	src: url(../Fonts/Open_Sans/OpenSans-Regular.tff);
 }
 @font-face{
 	font-family: Open_Sans_SemiBold;
 	src: url(../Fonts/Open_Sans/OpenSans-SemiBold.tff);
-}
-@font-face{
-	font-family: Oxygen_Regular;
-	src: url(../Fonts/Oxygen/Oxygen-Regular.tff);
 }
 .backgroundImage{
 	background-image: url('../Images/software.png');
